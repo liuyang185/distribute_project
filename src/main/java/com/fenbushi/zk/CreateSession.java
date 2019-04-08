@@ -19,6 +19,7 @@ public class CreateSession implements Watcher{
             "10.128.122.166:2181";
     private static ZooKeeper zooKeeper = null;
     private static Stat stat = new Stat();
+
     public static void main(String[] args) throws IOException {
          zooKeeper = new ZooKeeper(CONNECTEDS, 5000, new CreateSession());
         try {
