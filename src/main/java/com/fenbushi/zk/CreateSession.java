@@ -59,7 +59,7 @@ public class CreateSession implements Watcher{
             //删除子节点
             zooKeeper.delete(node1+"/child1",-1);
             zooKeeper.delete(node1,-1);
-
+            System.out.println(11);
             TimeUnit.SECONDS.sleep(1);
         } catch (KeeperException e) {
             e.printStackTrace();
